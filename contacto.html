@@ -1,0 +1,147 @@
+contacto
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con RED EYES.">
+    <title>RED EYES | Contacto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                RED<span> EYES</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menú"
+                aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-section container">
+
+            <div class="contact-intro">
+
+                <p class="section-number">01. HABLEMOS</p>
+
+                <h1>
+                    CON<span>TACTO.</span>
+                </h1>
+
+                <p class="contact-description">
+                    Las ideas comienzan con una conversación.
+                    Cuéntanos qué tienes en mente y hagamos
+                    algo diferente.
+                </p>
+
+                <div class="contact-decoration">
+                    <div class="eye-shape">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+
+                <p class="typewriter">
+                    EL CAOS TAMBIÉN OBSERVA.
+                </p>
+
+            </div>
+
+            <div class="contact-form-container">
+
+                <p class="section-number">02. ENVÍANOS UN MENSAJE</p>
+
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <label for="nombre">NOMBRE</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">CORREO ELECTRÓNICO</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="tucorreo@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">ASUNTO</label>
+                        <input
+                            type="text"
+                            id="asunto"
+                            name="asunto"
+                            placeholder="¿De qué quieres hablar?"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">MENSAJE</label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Escribe tu mensaje..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn form-button">
+                        ENVIAR MENSAJE <span>↗</span>
+                    </button>
+
+                    <p id="form-message" class="form-message"
+                        role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">RED<span> EYES</span></a>
+            <p>ARTE PARA LAS MENTES INQUIETAS.</p>
+            <p>© 2026 RED EYES. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
